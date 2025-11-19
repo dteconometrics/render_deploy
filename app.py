@@ -26,11 +26,6 @@ df_data["Date"] = pd.to_datetime(df_data["Date"])
 
 
 
-
-
-
-
-
 # =========  Layout  =========== #
 
 app.layout = html.Div(children=[
@@ -38,7 +33,7 @@ app.layout = html.Div(children=[
         dbc.Row([
             dbc.Col([
                 dbc.Card([
-                    html.H2("ASIMOV", style={"font-family": "Voltaire", "font-size" : "45px"}),
+                    html.H2("Supermarket", style={"font-family": "Voltaire", "font-size" : "35px"}),
 
                     html.H5("Cidades:"),
                     dcc.Checklist(df_data["City"].value_counts().index,
